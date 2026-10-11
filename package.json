@@ -1,0 +1,30 @@
+{
+  "name": "onni-laboratorio-anel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Laboratório para ler anéis QRing (Colmi/Yawell) pelo Bluetooth do navegador, antes de levar para o app Onni.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p .",
+    "build:lab": "node lab/montar.mjs",
+    "check:lab": "node lab/conferir.mjs",
+    "test:fusos": "TZ=America/Cuiaba vitest run && TZ=Asia/Tokyo vitest run && TZ=UTC vitest run"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/react": "16.0.1",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "esbuild": "0.24.0",
+    "jsdom": "25.0.1",
+    "playwright": "1.48.2",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.6.3",
+    "vitest": "2.1.9"
+  }
+}
